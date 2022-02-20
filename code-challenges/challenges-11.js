@@ -18,6 +18,8 @@
 
 function square(arr) {
     // write your code here
+    let arr1 = arr.map(val=>val*val);
+    return arr1;
 }
 // -------------------------------------------------------------------------------------------------------
 
@@ -57,6 +59,8 @@ function square(arr) {
 
 function fullName(arr) {
     // write your code here
+    let fullName=arr.map(val=>`${val.firstName} ${val.lastName}`);
+    return fullName;
 }
 // -------------------------------------------------------------------------------------------------------
 
@@ -123,6 +127,13 @@ function fullName(arr) {
 
 function gradesAvg(arr) {
     // write your code here
+    arr.map((element) => {
+        let sum = 0;
+        let len = element.gradsList.length;
+        element.gradsList.forEach(element => { sum+=element });
+        element.avg= sum/len ;
+    })
+    return arr;
 }
 // -------------------------------------------------------------------------------------------------------
 

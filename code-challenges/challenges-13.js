@@ -40,7 +40,7 @@
 
 const objectCounter = (obj) => {
     // write your code here
-    const myNum = obj.reduce((counter, x) => x.voter_Name != null ? counter += 1 : counter, 0); 
+    const myNum = obj.reduce((counter, x) => x.voter_Name != null ? counter += 1 : counter, 0 ); 
     
     return myNum;
 
@@ -67,13 +67,20 @@ const stringReverse = (str) => {
     //split by space
     const firstArray = str.split(" ");
 
-   const reversedString = firstArray.reduce((one, two) => {
-    return one + " " + two
-},)
-  return reversedString;
+    const revString = arr1.reduce((rev1, w) => {
+        return w + " " + rev1
+    },)
+      return revString;
+
+
+
+   const reversedString = firstArray.reduce((rev1, w) => {
+       return w + " " + rev1
+    },)
+    
+    return reversedString;
 }
 
-}
 // -------------------------------------------------------------------------------------------------------
 
 // -------------------------------------------------------------------------------------------------------

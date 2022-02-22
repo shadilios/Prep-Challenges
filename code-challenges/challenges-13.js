@@ -67,14 +67,7 @@ const stringReverse = (str) => {
     //split by space
     const firstArray = str.split(" ");
 
-    const revString = arr1.reduce((rev1, w) => {
-        return w + " " + rev1
-    },)
-      return revString;
-
-
-
-   const reversedString = firstArray.reduce((rev1, w) => {
+    const reversedString = firstArray.reduce((rev1, w) => {
        return w + " " + rev1
     },)
     

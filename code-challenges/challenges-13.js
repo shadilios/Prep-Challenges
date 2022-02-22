@@ -67,12 +67,12 @@ const stringReverse = (str) => {
     //split by space
     const firstArray = str.split(" ");
 
+
    const reversedString = firstArray.reduce((one, two) => {
     return two + " " + one
     })
   return reversedString;
 }
-
 
 // -------------------------------------------------------------------------------------------------------
 

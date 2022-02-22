@@ -40,7 +40,7 @@
 
 const objectCounter = (obj) => {
     // write your code here
-    const myNum = obj.reduce((counter, x) => x.voter_Name != null ? counter += 1 : counter, 0); 
+    const myNum = obj.reduce((counter, x) => x.voter_Name != null ? counter += 1 : counter, 0 ); 
     
     return myNum;
 

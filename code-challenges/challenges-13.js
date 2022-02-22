@@ -68,12 +68,12 @@ const stringReverse = (str) => {
     const firstArray = str.split(" ");
 
    const reversedString = firstArray.reduce((one, two) => {
-    return one + " " + two
-},)
+    return two + " " + one
+    })
   return reversedString;
 }
 
-}
+
 // -------------------------------------------------------------------------------------------------------
 
 // -------------------------------------------------------------------------------------------------------

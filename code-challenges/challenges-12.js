@@ -76,12 +76,9 @@ const oddFiltration = (arr) => {
 
 const cvsFiltration = (arr) => {
     // write your code here
-    finalArray = arr.filter(key => key.yearsOfExperience > 4 && key.tech === "JS").map(x =>
+    return arr.filter(key => key.yearsOfExperience > 4 && key.tech === "JS").map(x =>
+        ({ fullName: `${x.firstName}${x.LastName ? ` ${x.LastName}` : ""}`, tech: x.tech }));
 
-        ({ fullName: `${x.firstName} ${x.LastName ? ` ${x.LastName}` : ""}`, tech: x.tech }));
-
-
-    return finalArray;
 }
 // -------------------------------------------------------------------------------------------------------
 

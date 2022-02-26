@@ -76,24 +76,9 @@ const oddFiltration = (arr) => {
 
 const cvsFiltration = (arr) => {
     // write your code here
-    const first= arr.filter(function (obj) {
-        return obj.tech == "JS" && obj.yearsOfExperience > 5
+    return arr.filter(key => key.yearsOfExperience > 4 && key.tech === "JS").map(x =>
+        ({ fullName: `${x.firstName}${x.LastName ? ` ${x.LastName}` : ""}`, tech: x.tech }));
 
-    });
-    const second = first.filter(obj => {
-      if (obj.firstName == null) {
-          obj.fullName = obj.LastName;
-      } else if (obj.LastName == null){
-          obj.fullName = obj.firstName;
-          
-      }
-      else{
-          obj.fullName = obj.firstName + " " + obj.LastName;
-      }
-      return delete obj.firstName && delete obj.LastName && delete obj.yearsOfExperience && obj;
-
-    })
-    return second ;
 }
 // -------------------------------------------------------------------------------------------------------
 
